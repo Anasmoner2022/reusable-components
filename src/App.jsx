@@ -1,5 +1,5 @@
 import Button from "./components/Button"
-import { ChevronRight, Mail, Terminal } from "lucide-react"
+import { ChevronRight, CircleAlert, LaptopMinimalCheck, Library, Mail, Terminal, TriangleAlert } from "lucide-react"
 
 import Header from "./components/Header"
 import { Alert, AlertDescription, AlertTitle } from "./components/Alert";
@@ -64,9 +64,45 @@ const App = () => {
           onButtonClick={handleClick}
         />
       </div>
-      <div className="">
+      <div className="flex flex-col gap-5 ">
+        <Alert>
+          <Library size={24} />
+          <AlertTitle>
+            Message
+          </AlertTitle>
+          <AlertDescription>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque sed ab voluptas sunt totam eos assumenda quia eum doloremque, perferendis, dignissimos, provident nesciunt repellendus quaerat repellat beatae? In, delectus cupiditate!
+          </AlertDescription>
+        </Alert>
+        <Alert type="success">
+          <LaptopMinimalCheck size={24} />
+          <AlertTitle>
+            Message
+          </AlertTitle>
+          <AlertDescription>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque sed ab voluptas sunt totam eos assumenda quia eum doloremque, perferendis, dignissimos, provident nesciunt repellendus quaerat repellat beatae? In, delectus cupiditate!
+          </AlertDescription>
+        </Alert>
         <Alert type="error">
+          <CircleAlert size={24} />
+          <AlertTitle>
+            Message
+          </AlertTitle>
+          <AlertDescription>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque sed ab voluptas sunt totam eos assumenda quia eum doloremque, perferendis, dignissimos, provident nesciunt repellendus quaerat repellat beatae? In, delectus cupiditate!
+          </AlertDescription>
+        </Alert>
+        <Alert type="base">
           <Terminal size={24} />
+          <AlertTitle>
+            Message
+          </AlertTitle>
+          <AlertDescription>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque sed ab voluptas sunt totam eos assumenda quia eum doloremque, perferendis, dignissimos, provident nesciunt repellendus quaerat repellat beatae? In, delectus cupiditate!
+          </AlertDescription>
+        </Alert>
+        <Alert type="warning">
+          <TriangleAlert size={24} />
           <AlertTitle>
             Message
           </AlertTitle>
