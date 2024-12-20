@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*_____________________________________*/
+/* Base */
+/*_____________________________________*/
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    @apply bg-black text-zinc-50
+}
+
+
+
+/*_____________________________________*/
+/* COMPONENTS */
+/*_____________________________________*/
+
+/* Menu btn */
+.menu-btn {
+    @apply h-10 w-10 grid place-items-center bg-zinc-50/10 rounded-xl ring-inset ring-1 ring-zinc-900/[0.02] backdrop-blur-2xl transition-colors hover:bg-zinc-50/15 active:scale-95;
+
+}
+
+/* Navbar */
+
+.navbar {
+    @apply absolute right-0 top-full mt-2 min-w-40 bg-zinc-50/10 rounded-2xl p-2 ring-inset ring-1 scale-90 ring-zinc-50/5 isolate blur-sm opacity-0 invisible transition-opacity md:static md:flex md:items-center md:mt-0 md:opacity-100 md:blur-0 md:visible md:scale-100 backdrop-blur-2xl;
+}
+
+
+.navbar.active {
+    @apply opacity-100 scale-100 blur-0 visible
+}
+
+
+.nav-link {
+    @apply grid items-center font-medium text-sm h-9 px-4 tracking-wide text-zinc-50/50 hover:text-zinc-50 transition-colors
+}
+
+
+.nav-link.active {
+    @apply text-zinc-900 duration-500
+}
+
+
+.navbar .active-box {
+    @apply absolute bg-zinc-50 rounded-lg -z-10 transition-all duration-500;
+}
